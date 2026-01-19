@@ -3,15 +3,9 @@
 **Quantum-Resistant Hybrid Communication System**
 
 ## Overview
-Quantum-Shield 6G is a C++20 prototype designed to secure communications against future quantum threats. It implements a **Hybrid Key Exchange** mechanism, combining  **X25519** (Elliptic Curve) with **ML-KEM-768**. 
+Quantum-Shield 6G is a C++20 prototype designed to secure communications against future quantum "Harvest Now, Decrypt Later" threats. It implements a **Hybrid Key Exchange** mechanism, combining  **X25519** (Elliptic Curve) with **ML-KEM-768**. 
 
 The system negotiates a shared secret over a standard TCP connection and establishes an authenticated encrypted channel using **AES-256-GCM**. It is built for performance, security, and simplicity, utilizing a custom binary wire protocol.
-
-## Key Features
-*   Layers classical ECDH with Lattice-based KEMs to prevent "Harvest Now, Decrypt Later" attacks.
-*   Application data is protected by AES-256-GCM with distinct, random IVs for every frame.
-*   Lightweight, deterministic wire format designed for high-speed networks.
-*   Integrated suite to measure sub-millisecond cryptographic overhead.
 
 ## Quick Start
 
